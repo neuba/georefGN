@@ -1,0 +1,9 @@
+bibentry(
+  bibtype = "Manual",
+  title   = "georefGN: Georeferencing Herbarium and GBIF Occurrences with GeoNames and Collector Itineraries",
+  author  = person("[A COMPLETER]"),
+  year    = "2026",
+  note    = "R package version 0.5.0",
+  url     = "https://github.com/[A COMPLETER]/georefGN",
+  textVersion = "[A COMPLETER] (2026). georefGN: Georeferencing Herbarium and GBIF Occurrences with GeoNames and Collector Itineraries. R package version 0.5.0."
+)

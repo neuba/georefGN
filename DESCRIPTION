@@ -1,0 +1,43 @@
+Package: georefGN
+Type: Package
+Title: Georeferencing Herbarium and GBIF Occurrences with GeoNames and Collector Itineraries
+Version: 0.5.0
+Authors@R: c(
+    person("[À COMPLÉTER]", "[À COMPLÉTER]", email = "a.completer@example.org",
+           role = c("aut", "cre")))
+Description: Assigns coordinates to occurrence records (e.g. GBIF herbarium
+    specimens) that only have a textual locality description. Records are
+    first matched to georeferenced records of the same collector at the same
+    GeoNames place within a short time window; undated specimens can be dated
+    from their collection number. Remaining records are georeferenced from the
+    place names found in their locality text, using the GeoNames gazetteer and
+    its alternate names, with homonym resolution and distance-direction offsets
+    ("10 km N of Man"). Original coordinates are checked for latitude/longitude
+    swaps and sign errors. The package also provides a repeated-masking
+    validation and a comparison of IUCN criterion B metrics computed with
+    'ConR' before and after georeferencing.
+License: MIT + file LICENSE
+URL: https://github.com/[À COMPLÉTER]/georefGN
+BugReports: https://github.com/[À COMPLÉTER]/georefGN/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports:
+    dplyr (>= 1.1.0),
+    geosphere,
+    graphics,
+    grDevices,
+    stats,
+    stringi,
+    stringr,
+    tidyr,
+    utils
+Suggests:
+    ConR,
+    CoordinateCleaner,
+    countrycode,
+    stringdist,
+    testthat (>= 3.0.0),
+    writexl
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1
+Roxygen: list(markdown = TRUE)
